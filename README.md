@@ -14,7 +14,7 @@ DNE has two coupled modules:
 1. **Profile module** — maps sparse stimulus–response histories to a latent participant representation and predicts upcoming actions. Architecture choice (post-attention LSTM) is supported by the benchmarks in Figs. 2–3.
 2. **Control module** — uses the current participant model together with a fixed reference model to select stimuli that maximize predicted response divergence (adversarial alignment control). Policy comparisons are reported in Fig. 4.
 
-In the human causal-reasoning experiment (Figs. 5–8), participants completed five sessions (S0–S4) under either a **static** condition (non-adaptive sequences) or a **DNE** condition (closed-loop sequence selection). Analyses evaluate one-shot causal inference, alignment to the reference model \(M^*\), changes in fitted learning dynamics, and task personalization.
+In the human causal-reasoning experiment (Figs. 5–8), participants completed five sessions (S0–S4) under either a **static** condition (non-adaptive sequences) or a **DNE** condition (closed-loop sequence selection). Analyses evaluate one-shot causal inference, alignment to the reference model, changes in fitted learning dynamics, and task personalization.
 
 This repository is intended for **code and data availability**: it ships experiment software, analysis scripts where self-contained, and frozen summary tables for the main-text figures. Large training checkpoints and full simulation trajectories are not redistributed.
 
