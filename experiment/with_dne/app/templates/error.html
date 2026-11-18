@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Decision Making Experiment – Error</title>
+  <link href="{{ url_for('static', filename='lib/jspsych-6.3.1/css/jspsych.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  {% if errornum == 1000 %}
+  
+  <h1>An error has occurred</h1>
+  <hr>
+  
+  <p>Your Worker ID could not be detected.</p>
+  <p>Please restart the experiment using the original Connect study link.</p>
+
+  {% elif errornum == 1001 %}
+  
+  <h1>Device not supported</h1>
+  <hr>
+  
+  <p>This experiment requires a desktop or laptop computer.</p>
+  <p>Mobile phones and tablets are not supported.</p>
+  <p>Please return the study and, if you wish, try again using a desktop device.</p>
+
+  {% elif errornum == 1002 %}
+
+  <h1>Study terminated</h1>
+  <hr>
+
+  <p>You have indicated that you do not wish to continue with this study.</p>
+  <p>Please return the study so that another participant may take part.</p>
+
+  {% elif errornum == 1003 %}
+  
+  <h1>Technical issue detected</h1>
+  <hr>
+
+  <p>A technical problem occurred while loading the experiment.</p>
+  <p>This usually indicates that a required component failed to load correctly.</p>
+
+  <p>If you would like to request partial compensation or believe this page was reached in error,  
+     please contact us via email at <a href="mailto:bml.kaist@gmail.com">bml.kaist@gmail.com</a>  
+     or send us a message through the Connect platform messaging system, describing the issue you encountered.</p>
+
+  {% elif errornum == 1004 %}
+
+  <h1>Duplicate participation detected</h1>
+  <hr>
+
+  <p>Our records indicate that this account has already started or completed this study.</p>
+  <p>This page may also appear if the browser was refreshed, the back button was used, or the study was opened in a new window.</p>
+
+  <p>Because this is a psychology experiment, participation is limited to one attempt per person.</p>
+
+  <p>If you believe this occurred due to an error or would like to request partial compensation,  
+     please contact us via email at <a href="mailto:bml.kaist@gmail.com">bml.kaist@gmail.com</a>  
+     or send a message through the Connect platform messaging system with a brief description of what happened.</p>
+
+  {% elif errornum == 1005 %}
+
+  <h1>Non-compliant activity detected</h1>
+  <hr>
+
+  <p>Unusual or non-compliant response patterns were detected during the task.</p>
+  <p>This may indicate random responding or insufficient engagement with the experiment.</p>
+
+  <p>Repeated instances of this behaviour may result in exclusion from future studies.</p>
+
+  <p>If you believe this decision was made in error,  
+     please contact us via email at <a href="mailto:bml.kaist@gmail.com">bml.kaist@gmail.com</a>  
+     or through the Connect platform messaging system, including a brief explanation.</p>
+
+  <p>Please return the study so that another participant may take part.</p>
+
+  {% else %}
+
+  <h1>Unexpected error</h1>
+  <hr>
+
+  <p>An unexpected issue occurred while processing your participation.</p>
+
+  <p>If you would like to request partial compensation or believe this page was shown incorrectly,  
+     please contact us via email at <a href="mailto:bml.kaist@gmail.com">bml.kaist@gmail.com</a>  
+     or send us a message through the Connect platform messaging system describing the issue.</p>
+
+  {% endif %}
+
+  <hr>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DNE Experiment - Live Status</title>
+  <style>
+    body { font-family: monospace; margin: 1em; background: #1a1a1a; color: #e0e0e0; }
+    h1 { font-size: 1.1em; }
+    table { border-collapse: collapse; font-size: 13px; }
+    th, td { border: 1px solid #444; padding: 4px 8px; text-align: left; }
+    th { background: #333; }
+    tr:nth-child(even) { background: #252525; }
+    .stuck { color: #f66; }
+    a { color: #6af; }
+  </style>
+</head>
+<body>
+  <h1>DNE Live Status (auto-refresh 10s)</h1>
+  <p><a href="{{ url_for('status') }}">Refresh</a></p>
+  <h2>참가자</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>workerId</th>
+        <th>subId</th>
+        <th>현재 상태</th>
+        <th>session / 진행</th>
+        <th>last_seen</th>
+        <th>멈춤</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for r in rows %}
+      <tr>
+        <td>{{ r[0] }}</td>
+        <td>{{ r[1] }}</td>
+        <td>{{ r[2] }}</td>
+        <td>{{ r[3] }}</td>
+        <td>{{ r[4] }}</td>
+        <td class="{% if r[5] %}stuck{% endif %}">{{ r[5] }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="6">No participants yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <h2>최근 로그 (gen_exps_error, experiment_log_started 등 실시간)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>시각</th>
+        <th>event</th>
+        <th>workerId</th>
+        <th>subId</th>
+        <th>message</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for e in recent_log_rows %}
+      <tr>
+        <td>{{ e[0] }}</td>
+        <td>{{ e[1] }}</td>
+        <td>{{ e[2] }}</td>
+        <td>{{ e[3] }}</td>
+        <td style="max-width:400px;word-break:break-all;">{{ e[4] }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="5">No log yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <h2>최근 에러 (어디서 터졌는지)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>시각</th>
+        <th>event</th>
+        <th>workerId</th>
+        <th>subId</th>
+        <th>message / error</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for e in error_rows %}
+      <tr>
+        <td>{{ e[0] }}</td>
+        <td>{{ e[1] }}</td>
+        <td>{{ e[2] }}</td>
+        <td>{{ e[3] }}</td>
+        <td style="max-width:400px;word-break:break-all;">{{ e[4] }}</td>
+      </tr>
+      {% else %}
+      <tr><td colspan="5">No errors yet.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <script>
+    setTimeout(function(){ window.location.reload(); }, 10000);
+  </script>
+</body>
+</html>

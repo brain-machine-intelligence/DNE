@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Decision Making Experiment - Completed</title>
+	<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/tacit-css.min.css') }}"/>-->
+	<link href="{{ url_for('static', filename='lib/jspsych-6.3.1/css/jspsych.css') }}" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+	<div id="container-not-an-ad" class="media">
+		<div class="media-body">
+			<center><h1>Thank you for completing our experiment!</h1></center>
+            <center>
+              <p>You will be redirected to the CloudResearch completion page in a few seconds.</p>
+              <p>If you are not redirected automatically, please enter the following completion code in CloudResearch:</p>
+              <p style="font-size: 1.5em; font-weight: bold; margin-top: 10px;">Completion Code: 86C47C5EE4</p>
+            </center>
+		</div>
+	</div>
+</body>
+<script>
+    const connectUrl = "https://connect.cloudresearch.com/participant/project/86C47C5EE4/complete";
+
+    // 자동 리다이렉트 (3초 후)
+    setTimeout(function () {
+      window.location.replace(connectUrl);
+    }, 3000);
+
+    // 키를 누르면 곧바로 리다이렉트
+    document.addEventListener('keydown', function () {
+      window.location.replace(connectUrl);
+    });
+</script>
+</html>

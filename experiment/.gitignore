@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.pt
+*.pth
+*.pkl
+*.pickle
+
+# Do not ship rendered manuscript plots
+figures/**/results/**/*.png
+figures/**/results/**/*.jpg
+figures/**/results/**/*.jpeg
+figures/**/results/plots/
+
+experiment/**/data/
+experiment/**/metadata/
+experiment/**/incomplete/
+experiment/**/reject/
+figures/fig04_control_alignment/data/simulation_results/**
+!figures/fig04_control_alignment/data/simulation_results/README.md
