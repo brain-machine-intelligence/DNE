@@ -113,7 +113,7 @@ cd experiment/with_dne          # or experiment/without_dne
 $env:PYTHONPATH = (Get-Location)
 $env:FLASK_APP = "app"
 python -m flask run --host 127.0.0.1 --port 5000
-# open http://127.0.0.1:5000/?workerId=TEST001
+# open http://localhost/?workerId=TEST001
 ```
 
 In the DNE arm, online stimulus selection uses the **post-attention LSTM** participant model selected in Figs. 2–3 (`app/os_model/module_RNN/dnns.py`), together with a fixed Bayesian causal-strength reference model (Lee et al., 2015).
