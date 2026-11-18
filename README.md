@@ -61,7 +61,7 @@ Figs. 5–8 ship `code/reproduce.py` plus intermediates under `data/` so the mai
 | [`figures/fig03_profile_history/`](figures/fig03_profile_history/) | Fig. 3 | Attention / channel / order perturbations and stagewise probes |
 | [`figures/fig04_control_alignment/`](figures/fig04_control_alignment/) | Fig. 4 | Simulation benchmark of DNE vs alternative stimulus-selection policies |
 | [`figures/fig05_causal_behavior/`](figures/fig05_causal_behavior/) | Fig. 5 | Matched-cohort behavioural tables + rating / OS-index stats |
-| [`figures/fig06_model_alignment/`](figures/fig06_model_alignment/) | Fig. 6 | Alignment to \(M^*\), trade-off, strategy-proximity forests |
+| [`figures/fig06_model_alignment/`](figures/fig06_model_alignment/) | Fig. 6 | Alignment to M*, trade-off, strategy-proximity forests |
 | [`figures/fig07_learning_rate/`](figures/fig07_learning_rate/) | Fig. 7 | Parameter trajectories, LR-reset counterfactuals, ΔLR–alignment coupling |
 | [`figures/fig08_task_personalization/`](figures/fig08_task_personalization/) | Fig. 8 | 30D task structure, TPS, behaviour→TPS→parameter coupling |
 
@@ -92,12 +92,6 @@ The script recomputes:
 - Fig. 5d (right) / Supp. Fig. 12 — session-wise Condition × Session analyses and Welch tests  
 
 Matched cohort sizes: **n = 52** static, **n = 54** DNE.
-
-Normalized OS index:
-
-\[
-\mathrm{OS\ index}=\frac{R_{\mathrm{novel}}-\tfrac{R_{8\times}+R_{16\times}}{2}}{R_{\mathrm{novel}}+R_{8\times}+R_{16\times}}
-\]
 
 Outputs are written to `figures/fig05_causal_behavior/results/` (overwriting the frozen CSVs if re-run).
 
