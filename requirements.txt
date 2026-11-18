@@ -1,0 +1,11 @@
+# Minimal environment for Fig. 5 behavioural reproduction
+numpy>=1.20
+pandas>=1.3
+scipy>=1.7
+statsmodels>=0.13
+pingouin>=0.5
+
+# Fig. 4 control module (install when running simulations)
+# -r figures/fig04_control_alignment/code/requirements.txt
+
+# Experiment apps additionally need Flask / gunicorn (see experiment app deps)
