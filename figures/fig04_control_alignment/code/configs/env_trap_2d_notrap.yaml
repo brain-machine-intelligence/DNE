@@ -1,0 +1,10 @@
+name: trap2d
+seed: 0
+
+stimulus_pool:
+  n_candidates: 50
+  bounds: [-2.0, 2.0]
+  method: latin
+
+trap:
+  enabled: false

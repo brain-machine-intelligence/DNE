@@ -1,0 +1,3 @@
+Reference parameter vector is fixed for all runs:
+theta* = (w_x, w_y, b) = (1.3, -0.9, 0.4)
+It is not resampled across seeds.

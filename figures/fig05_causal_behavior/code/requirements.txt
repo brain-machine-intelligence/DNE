@@ -1,0 +1,12 @@
+# Shared / minimal stack for analysis + experiment
+numpy>=1.20
+pandas>=1.3
+scipy>=1.7
+pingouin>=0.5
+statsmodels>=0.13
+matplotlib>=3.5
+
+# Experiment (With/Without DNE Flask apps)
+flask>=2.0
+torch>=1.10
+gunicorn

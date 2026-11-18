@@ -1,0 +1,2 @@
+beta_int,p_lmm,p_perm,pearson_r_scatter,pearson_p_scatter,n_obs,formula,note
+-0.1053975857052053,0.0070196947342581984,0.0009990009990009,0.023741123900137853,0.7310864286025494,212,dne_score_cv ~ prev_dne_score_cv + behav_dev_z * condition_with + C(session),p_perm from behaviour_contingent_permutation (shipped)

@@ -1,0 +1,53 @@
+out_dir: results
+trials: 200
+seeds: [0, 1, 2, 3, 4]
+
+posterior:
+  theta_grid:
+    wx: [-2.0, 2.0, 21]     # [min, max, num]
+    wy: [-2.0, 2.0, 21]
+    b:  [-1.5, 1.5, 19]
+  prior: uniform
+
+policies:
+  - name: dne
+    kind: dne
+
+  - name: eig
+    kind: eig
+
+  - name: bald
+    kind: bald
+
+  - name: thompson
+    kind: thompson
+
+  - name: uncertainty
+    kind: uncertainty
+
+  - name: random
+    kind: random
+
+  - name: boed_h2
+    kind: boed_h2
+
+  - name: boed_h3
+    kind: boed_h3
+
+  - name: tiny_rnn_info
+    kind: tiny_rnn_info
+    hidden: 32
+    lr: 0.001
+    steps_per_trial: 5
+    device: cpu
+
+  - name: tiny_rnn_target
+    kind: tiny_rnn_target
+    hidden: 32
+    lr: 0.001
+    steps_per_trial: 5
+    device: cpu
+
+
+metrics:
+  compute_trap_occupancy: true

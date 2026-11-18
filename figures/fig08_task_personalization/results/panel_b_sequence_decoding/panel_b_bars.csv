@@ -1,0 +1,3 @@
+label,observed_auc,p_perm,paper_label,sig
+session_1,0.5302706552706553,0.3276723276723277,S0,ns
+sessions_2_5,0.6875667735042736,0.0009990009990009,S1–S4,***

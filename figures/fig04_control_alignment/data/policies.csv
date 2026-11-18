@@ -1,0 +1,11 @@
+policy_key,label,order
+dne,DNE,0
+eig,EIG,1
+boed_h3,BOED-H3,2
+tiny_rnn_target,RNN-target,3
+thompson,Thompson,4
+random,Random,5
+bald,BALD,6
+boed_h2,BOED-H2,7
+uncertainty,Uncertainty,8
+tiny_rnn_info,RNN-info,9

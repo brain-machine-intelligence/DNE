@@ -1,0 +1,8 @@
+Independent runs (seeds 0-19), not paired across policies.
+AUC / RMST contrasts: DNE minus comparator.
+Bootstrap percentile 95% intervals: 20,000 resamples.
+Two-sided Monte Carlo permutation tests of the mean difference (add-one).
+Holm adjustment within each family of nine DNE contrasts; families are not pooled.
+Stars: *** p_holm<0.001, ** <0.01, * <0.05, else ns.
+Attainment non-hit coded as restricted_time = 200 for RMST.
+Entropy-matched panel (e): exploratory; interpret bins with n>=8.

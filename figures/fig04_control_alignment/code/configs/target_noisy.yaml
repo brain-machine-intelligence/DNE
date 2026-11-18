@@ -1,0 +1,6 @@
+type: logistic_bernoulli
+theta_star: [1.3, -0.9, 0.4]
+temperature: 1.0
+wrapper:
+  mode: noisy_theta
+  sigma: 0.35

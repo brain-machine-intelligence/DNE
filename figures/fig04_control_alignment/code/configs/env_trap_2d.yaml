@@ -1,0 +1,15 @@
+name: trap2d
+seed: 0
+
+stimulus_pool:
+  n_candidates: 50
+  bounds: [-2.0, 2.0]   # x and y bounds (square)
+  method: latin         # latin | random
+
+trap:
+  enabled: true
+  low_norm_radius: 0.5
+  orth_band_width: 0.25
+  orth_band_axis: y     # x | y
+
+

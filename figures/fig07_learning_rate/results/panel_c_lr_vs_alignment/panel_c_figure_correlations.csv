@@ -1,0 +1,3 @@
+panel,window,condition,n,pearson_r,p,sig,subset
+Control rounds,mean14,with-DNE,54,0.8521046397776628,3.0654521618768605e-16,***,incre_diagnostic_top50
+OS rounds,mean14,with-DNE,54,-0.7219515059401074,7.242898945549772e-10,***,os_diagnostic_top50

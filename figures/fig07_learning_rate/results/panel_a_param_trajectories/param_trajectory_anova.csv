@@ -1,0 +1,17 @@
+parameter,effect,F,p,sig
+primacy,C(group),5.93759130204977,0.015155683474805332,*
+primacy,C(session),2.026653402098598,0.08942251160224446,ns
+primacy,C(group):C(session),0.959149789332772,0.42952197444380114,ns
+primacy,Residual,,,ns
+recency,C(group),11.932578041825346,0.0005966468282123505,***
+recency,C(session),1.6723698882290319,0.15500956494372248,ns
+recency,C(group):C(session),1.793649931047695,0.1287109834010075,ns
+recency,Residual,,,ns
+learning rate,C(group),18.06944735960515,2.5250529707429094e-05,***
+learning rate,C(session),2.189572995201777,0.06899488139035369,ns
+learning rate,C(group):C(session),2.3413696850174497,0.05402425471673285,ns
+learning rate,Residual,,,ns
+inv_temp,C(group),4.839400033831811,0.0282557686375478,*
+inv_temp,C(session),0.9789334850542083,0.418523097726321,ns
+inv_temp,C(group):C(session),0.6798761091528143,0.6061336926349843,ns
+inv_temp,Residual,,,ns

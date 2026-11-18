@@ -1,0 +1,11 @@
+os_type_label,subset,condition,session,n,pearson_r_delta_lr_vs_delta_l1,p_delta_lr_vs_delta_l1
+OS,os_diagnostic_top50,with-DNE,1,54,-0.780829834512345,3.3172994509408853e-12
+OS,os_diagnostic_top50,without-DNE,1,52,0.0608348690027532,0.6683456308695328
+OS,os_diagnostic_top50,with-DNE,2,54,-0.6990398242916329,4.128759636660626e-09
+OS,os_diagnostic_top50,without-DNE,2,52,-0.3779537096483451,0.005736179826864855
+OS,os_diagnostic_top50,with-DNE,3,54,-0.3819943354690477,0.0043670657618543485
+OS,os_diagnostic_top50,without-DNE,3,52,-0.6414768764242956,2.9899060429069903e-07
+OS,os_diagnostic_top50,with-DNE,4,54,-0.6672429040212338,3.591935076582929e-08
+OS,os_diagnostic_top50,without-DNE,4,52,-0.45059882393678186,0.0008019398330618461
+OS,os_diagnostic_top50,with-DNE,mean14,54,-0.7219515059401074,7.242898945549772e-10
+OS,os_diagnostic_top50,without-DNE,mean14,52,-0.3776194239269063,0.005782768915646596

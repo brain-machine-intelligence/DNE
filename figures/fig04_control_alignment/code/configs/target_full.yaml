@@ -1,0 +1,5 @@
+type: logistic_bernoulli
+theta_star: [1.3, -0.9, 0.4]   # [wx, wy, bias]
+temperature: 1.0
+wrapper:
+  mode: full

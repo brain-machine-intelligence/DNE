@@ -1,0 +1,5 @@
+round,condition,group,mean_cross_session,sem_cross_session,sd_cross_session,n_sessions,obs_cross_diff,perm_p_cross_diff,sig
+Control,DNE,with,6.02,0.166,0.333,4,2.173,0.0009990009990009,***
+Control,Static,without,3.847,0.023,0.046,4,2.173,0.0009990009990009,***
+OS,DNE,with,5.77,0.109,0.219,4,1.994,0.0009990009990009,***
+OS,Static,without,3.776,0.055,0.109,4,1.994,0.0009990009990009,***

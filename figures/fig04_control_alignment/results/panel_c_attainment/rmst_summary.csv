@@ -1,0 +1,11 @@
+environment,policy,policy_key,threshold,n_runs,n_attained,n_censored,rmst,median_restricted,final_percent_attained
+full,DNE,dne,0.02,20,20,0,33.0,14.0,100.0
+full,EIG,eig,0.02,20,13,7,115.45,99.0,65.0
+full,BOED-H3,boed_h3,0.02,20,18,2,92.9,105.5,90.0
+full,RNN-target,tiny_rnn_target,0.02,20,17,3,67.65,40.0,85.0
+full,Thompson,thompson,0.02,20,8,12,153.35,200.0,40.0
+full,Random,random,0.02,20,12,8,116.7,122.5,60.0
+full,BALD,bald,0.02,20,12,8,113.7,99.5,60.0
+full,BOED-H2,boed_h2,0.02,20,16,4,98.95,71.0,80.0
+full,Uncertainty,uncertainty,0.02,20,9,11,139.15,200.0,45.0
+full,RNN-info,tiny_rnn_info,0.02,20,9,11,135.95,200.0,45.0

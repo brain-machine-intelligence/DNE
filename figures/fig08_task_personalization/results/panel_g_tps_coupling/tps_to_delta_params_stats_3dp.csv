@@ -1,0 +1,13 @@
+panel,scope,beta,p_clustered,r,r_p
+Incre delta_LR,Static,0.053,0.123,0.118,0.088
+Incre delta_LR,DNE,-0.134,0.083,-0.135,0.047
+Incre delta_LR,interaction,-0.187,0.028,,
+OS delta_LR,Static,-0.012,0.815,0.023,0.738
+OS delta_LR,DNE,-0.303,0.003,-0.239,0.0
+OS delta_LR,interaction,-0.291,0.009,,
+Incre G_Incre,Static,-0.001,0.871,-0.011,0.871
+Incre G_Incre,DNE,-0.071,0.025,-0.159,0.019
+Incre G_Incre,interaction,-0.07,0.032,,
+OS G_OS,Static,0.003,0.928,-0.024,0.73
+OS G_OS,DNE,0.062,0.025,0.174,0.01
+OS G_OS,interaction,0.058,0.203,,
