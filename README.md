@@ -164,10 +164,6 @@ This recomputes the main reported statistics from the shipped intermediates (no 
 
 If you use this code or data, please cite the paper above.
 
-## Code availability (manuscript text)
-
-> Custom code for the Deep Neural Experimenter (DNE)—including profile- and control-module benchmarks (Figs. 2–4), the human causal-reasoning experiment software, and analysis scripts with summary tables for Figs. 5–8—is available in this repository. Aggregated behavioural data and matched-cohort subject lists are included; large simulation trajectories and model checkpoints are not redistributed.
-
 ## License
 
 This project is released under the [MIT License](LICENSE).
