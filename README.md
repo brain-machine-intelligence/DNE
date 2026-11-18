@@ -149,16 +149,6 @@ python code/reproduce.py
 
 This recomputes the main reported statistics from the shipped intermediates (no full model re-fit).
 
-## Included vs not included
-
-| Included in this repository | Not redistributed |
-|-----------------------------|-------------------|
-| Flask / jsPsych experiment software (static + DNE) | Large profile-module checkpoints (`.pt`) |
-| Aggregated behavioural tables and matched-cohort subject lists (Fig. 5) | Full control-module simulation trajectory trees |
-| Subject-level intermediates + `reproduce.py` for Figs. 5–8 | Full session-wise param-fitting / TPS feature-build pipelines (not shipped) |
-| Frozen summary statistics for main figures | |
-| Control-module simulation and analysis source code | |
-| Profile-module analysis scripts (without weights) | |
 
 ## Citation
 
