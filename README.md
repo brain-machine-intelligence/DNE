@@ -71,7 +71,7 @@ Figs. 5–8 include `code/reproduce.py` and intermediates under `data/`, allowin
 - **Figs. 5–8 statistical reproduction:** each figure's `code/requirements.txt` (Fig. 5 also mirrored in root [`requirements.txt`](requirements.txt))
 - **Fig. 4 control simulations:** `figures/fig04_control_alignment/code/requirements.txt`
 - **Human experiment applications:** Flask and packages imported by each condition's `app/` package (see [`experiment/README.md`](experiment/README.md))
-- **Figs. 2–3 training and perturbation scripts:** PyTorch and the original training tree and checkpoints, which are **not** included here
+- **Figs. 2–3 training and perturbation scripts:** PyTorch and the original training tree and checkpoints, which are not included here
 
 ## Getting started
 
