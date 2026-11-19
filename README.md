@@ -26,7 +26,7 @@ experiment/                      Human causal-reasoning task (Flask + jsPsych)
   without_dne/                   Static (non-adaptive) condition
 
 figures/                         One folder per main-text figure
-  fig02_profile_benchmark/       Fig. 2 — Neural behavioral profiling architecture benchmark
+  fig02_profile_benchmark/       Fig. 2 — behavioral profiling architecture benchmark
   fig03_profile_history/         Fig. 3 — history use and strategy-specific probes
   fig04_control_alignment/       Fig. 4 — adversarial alignment control benchmark
   fig05_causal_behavior/         Fig. 5 — causal ratings and one-shot (OS) index
@@ -114,15 +114,7 @@ In the DNE condition, *Neural behavioral profiling* uses a **post-attention LSTM
 
 The paper's behavioural analyses use the curated tables under `figures/fig05_causal_behavior/data/`, not raw local runtime output from a test session.
 
-### 3. Fig. 4: *Adversarial alignment control* benchmark
-
-Frozen panel summaries (AUC comparisons, restricted mean survival time (RMST) and attainment curves, entropy-matched alignment, and noisy-environment counterparts) are stored in:
-
-`figures/fig04_control_alignment/results/panel_*/`
-
-The simulation stack (environment, ten policies, sweep runners and exporters) is under `figures/fig04_control_alignment/code/`. Full multi-seed trajectories are large and are **not** redistributed. To regenerate statistics, run the local sweeps and direct the analysis pipeline to those results (see the figure-specific README).
-
-### 4. Figs. 2–3: *Neural behavioral profiling* benchmarks
+### 3. Figs. 2–3: *Neural behavioral profiling* benchmarks
 
 Each folder includes:
 
@@ -130,6 +122,14 @@ Each folder includes:
 - **`results/`** — frozen tables underlying the reported benchmarks
 
 Retraining or rerunning perturbation analyses requires model checkpoints and the original sliding-window training tree, which are not included. To inspect the reported benchmark numbers, use the files in `results/`.
+
+### 4. Fig. 4: *Adversarial alignment control* benchmark
+
+Frozen panel summaries (AUC comparisons, restricted mean survival time (RMST) and attainment curves, entropy-matched alignment, and noisy-environment counterparts) are stored in:
+
+`figures/fig04_control_alignment/results/panel_*/`
+
+The simulation stack (environment, ten policies, sweep runners and exporters) is under `figures/fig04_control_alignment/code/`. Full multi-seed trajectories are large and are **not** redistributed. To regenerate statistics, run the local sweeps and direct the analysis pipeline to those results (see the figure-specific README).
 
 ### 5. Figs. 6–8: model-based human analyses
 
